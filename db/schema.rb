@@ -10,15 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_26_200115) do
+ActiveRecord::Schema.define(version: 2019_09_27_182756) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "author"
     t.integer "isbn"
-    t.decimal "price", precision: 4, scale: 2
+    t.decimal "price", precision: 5, scale: 2
     t.text "description"
-    t.integer "quantity"
   end
 
 end

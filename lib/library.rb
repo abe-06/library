@@ -9,14 +9,26 @@ class Main
     system('cls')
     initial_options(ops)
   end
+
   def initial_options(ops)
     case ops
     when 1
       system('cls')
       puts "You will be required to input the Book's title, author, isbn number, and price, please have it on hand"
+      # Ask for title, author, etc
     when 2
       puts '1-Search for a book'
       puts '2-Search for a collection'
+      puts '3-Back'
+      ops = gets.chomp.to_i
+      case ops
+      when 1
+        #Search for a book
+      when 2
+        #Search for a collection (either by author or by isbn)
+      when 3
+        user_interface
+      end
     when 3
       system('cls')
       puts 'Exiting the system...'
