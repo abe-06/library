@@ -3,7 +3,7 @@
 #require 'irb'
 require "pry"
 # add pry to Gemfile
-require_relative '../lib/navy'
+require_relative '../lib/library'
 
 def reload!(print = true)
   puts 'Reloading ...' if print

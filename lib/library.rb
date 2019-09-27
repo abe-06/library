@@ -1,3 +1,6 @@
+require_relative '../db/connection'
+require_relative 'books/book'
+
 class Main
   def user_interface
     system('cls')
