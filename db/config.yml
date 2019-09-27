@@ -1,0 +1,16 @@
+default: &default
+  adapter: sqlite3
+  pool: 20
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/library_db_development.sqlite
+
+test:
+  <<: *default
+  database: db/library_db_test.sqlite
+
+production:
+  <<: *default
+  database: db/library_db_production.sqlite
