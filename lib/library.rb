@@ -1,7 +1,9 @@
 require_relative '../db/connection'
-require_relative 'books/book'
+require_relative '../../Library/lib/models/book'
+require 'active_record'
 
-class Main
+class Main < Book
+
   def user_interface
     system('cls')
     puts 'Welcome to AutoLibrarian, please select an option'
@@ -17,8 +19,8 @@ class Main
     case ops
     when 1
       system('cls')
-      puts "You will be required to input the Book's title, author, isbn number, and price, please have it on hand"
-      # Ask for title, author, etc
+      puts "You will be required to input the Book's title, author, genre, isbn number, and price, please have it on hand"
+      Book.save_new_book
     when 2
       puts '1-Search for a book'
       puts '2-Search for a collection'
@@ -43,6 +45,6 @@ class Main
     end
   
   end
-
+  
 end
 Main.new.user_interface

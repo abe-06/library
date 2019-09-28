@@ -8,9 +8,9 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "rake", "~> 12.3"
 
-gem "activerecord", "~> 5.2"
+gem "activerecord", "~> 6"
 
-gem "standalone_migrations", "~> 5.2"
+gem "active_record_migrations"
 
 gem "sqlite3", "~> 1.3"
 
