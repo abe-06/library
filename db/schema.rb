@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_09_27_182756) do
     t.string "author"
     t.string "genre"
     t.integer "isbn"
+    t.string "collection"
     t.decimal "price", precision: 5, scale: 2
     t.text "description"
   end
