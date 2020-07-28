@@ -16,7 +16,7 @@ gem "sqlite3", "~> 1.3"
 
 gem "rest-client", "~> 2.0"
 
-gem "json", "~> 2.1"
+gem "json", "~> 2.3"
 
 gem "faker", "~> 1.9"
 
